@@ -1,0 +1,52 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:QuizApp.Views"
+             x:Class="QuizApp.Views.Frage4Page">
+
+	<ScrollView>
+		<StackLayout>
+			<Image Source="quizbackground.png" Aspect="AspectFill"/>
+			<Label Text="Frage 4:"
+                   FontSize="36"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="20"/>
+			<Label Text="Was ist die chemische Formel von Wasser?"
+                   FontSize="25"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="20"/>
+			<Button Text="A: H2O"
+                    Command="{Binding NextCommand}"
+                    CommandParameter="frage5.html"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Margin="10"/>
+			<Button Text="B: CO2"
+                    Command="{Binding NextCommand}"
+                    CommandParameter="frage5.html"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Margin="10"/>
+			<Button Text="C: O2"
+                    Command="{Binding NextCommand}"
+                    CommandParameter="frage5.html"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Margin="10"/>
+			<Button Text="D: H2SO4"
+                    Command="{Binding NextCommand}"
+                    CommandParameter="frage5.html"
+                    FontSize="24"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Margin="10"/>
+		</StackLayout>
+	</ScrollView>
+
+</ContentPage>

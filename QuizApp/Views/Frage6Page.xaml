@@ -1,0 +1,52 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:QuizApp.Views"
+             x:Class="QuizApp.Views.Frage6Page">
+
+    <ScrollView>
+        <StackLayout>
+            <Image Source="quizbackground.png" Aspect="AspectFill"/>
+            <Label Text="Frage 6:" 
+                   FontSize="36" 
+                   TextColor="White" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" 
+                   Margin="20"/>
+            <Label Text="Welcher Planet ist der größte im Sonnensystem?" 
+                   FontSize="25" 
+                   TextColor="White" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" 
+                   Margin="20"/>
+            <Button Text="A: Mars" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage7.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+            <Button Text="B: Erde" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage7.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+            <Button Text="C: Jupiter" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage7.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+            <Button Text="D: Saturn" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage7.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

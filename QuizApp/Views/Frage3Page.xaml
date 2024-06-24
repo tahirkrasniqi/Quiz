@@ -1,0 +1,52 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:QuizApp.Views"
+             x:Class="QuizApp.Views.Frage3Page">
+
+    <ScrollView>
+        <StackLayout>
+            <Image Source="quizbackground.png" Aspect="AspectFill"/>
+            <Label Text="Frage 3:" 
+                   FontSize="36" 
+                   TextColor="White" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" 
+                   Margin="20"/>
+            <Label Text="Welches dieser Elemente ist ein Halbleiter?" 
+                   FontSize="25" 
+                   TextColor="White" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" 
+                   Margin="20"/>
+            <Button Text="A: Eisen" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage4.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+            <Button Text="B: Kupfer" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage4.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+            <Button Text="C: Silizium" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage4.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+            <Button Text="D: Gold" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage4.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

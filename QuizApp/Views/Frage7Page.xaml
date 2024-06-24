@@ -1,0 +1,52 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:QuizApp.Views"
+             x:Class="QuizApp.Views.Frage7Page">
+
+    <ScrollView>
+        <StackLayout>
+            <Image Source="quizbackground.png" Aspect="AspectFill"/>
+            <Label Text="Frage 7:" 
+                   FontSize="36" 
+                   TextColor="White" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" 
+                   Margin="20"/>
+            <Label Text="Was ist die chemische Formel für Salz?" 
+                   FontSize="25" 
+                   TextColor="White" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Start" 
+                   Margin="20"/>
+            <Button Text="A: HCl" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage8.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+            <Button Text="B: NaCl" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage8.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+            <Button Text="C: KCl" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage8.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+            <Button Text="D: CaCl2" 
+                    Command="{Binding NextCommand}" 
+                    CommandParameter="frage8.html"
+                    FontSize="24" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Start" 
+                    Margin="10"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
